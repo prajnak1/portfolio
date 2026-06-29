@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" type="image/png" href="./wmremove-transformed.png">
     <script src="https://kit.fontawesome.com/10cdd03ef7.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,6 +16,7 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -30,262 +32,217 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
-    <section id = "profile">
-        <div class = "section__pic-container">
-            <img src = "./assets/profile-pic.jpg" alt = "John Doe profile picture" >
+
+    <!-- PROFILE -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./wmremove-transformed.png" alt="Prajna Karmaker profile picture">
         </div>
-        <div class = "section__text">
-            <p class = "section__text__p1">Hello, I'm</p>
-            <h1 class = "title">Prajna Karmaker</h1>
-            <div id = "socials-container">
-                
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Prajna Karmaker</h1>
+            <div id="socials-container">
                 <a href="https://www.linkedin.com/in/prajna-karmaker-0ab239289/">
-                    <i class="fa-brands fa-linkedin" style="color: #8104a4;"></i>
+                    <i class="fa-brands fa-linkedin"></i>
                 </a>
-                
                 <a href="https://github.com/prajnak1">
-                    <i class="fa-brands fa-github" style="color: #8104a4;"></i>
+                    <i class="fa-brands fa-github"></i>
                 </a>
-                          
-             </div>
-        </div>
-    </section>
-    <section id = "experience">
-        <h1 class = "title">Experience</h1>
-        <div class = "experience-details-container">
-            <div class = "about-containers">
-                <div class = "details-container">
-                    <h2 class = "experience-sub-title">Frontend Development</h2>
-                    <div class ="article-container">
-                        <article>
-                            <img src = "./assets//checkmark.png" alt = "Experience icon" class = "icon"/>
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt = "Experience icon" class = "icon"/>
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt = "Experience icon" class = "icon"/>
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt = "Experience icon" class = "icon"/>
-                            <div>
-                                <h3>React.js</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        
-                    </div>
-                </div>
-                <div class = "details-container">
-                    <h2 class = "experience-sub-title">Backend Development</h2>
-                    <div class ="article-container">
-                        <article>
-                            <img src = "./assets//checkmark.png" alt = "Experience icon" class = "icon"/>
-                            <div>
-                                <h3>PostgreSQL</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt = "Experience icon" class = "icon"/>
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt = "Experience icon" class = "icon"/>
-                            <div>
-                                <h3>Express JS</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt = "Experience icon" class = "icon"/>
-                            <div>
-                                <h3>Git</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                
-            </div>
-            <div class = "about-containers">
-                <div class = "details-container">
-                    <h2 class = "experience-sub-title">Data Science</h2>
-                    <div class ="article-container">
-                        <article>
-                            <img src = "./assets//checkmark.png" alt = "Experience icon" class = "icon"/>
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt = "Experience icon" class = "icon"/>
-                            <div>
-                                <h3>R</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt = "Experience icon" class = "icon"/>
-                            <div>
-                                <h3>Tableau</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt = "Experience icon" class = "icon"/>
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        
-                    </div>
-                </div>
-                <div class = "details-container">
-                    <h2 class = "experience-sub-title">Cybersecurity</h2>
-                    <div class ="article-container">
-                        <article>
-                            <img src = "./assets//checkmark.png" alt = "Experience icon" class = "icon"/>
-                            <div>
-                                <h3>Compliance</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt = "Experience icon" class = "icon"/>
-                            <div>
-                                <h3>SIEM</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt = "Experience icon" class = "icon"/>
-                            <div>
-                                <h3>Malware Analysis</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt = "Experience icon" class = "icon"/>
-                            <div>
-                                <h3>Phishing Analysis</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                
             </div>
         </div>
     </section>
-    <section id = "projects">
-        <p class = "section__text__p1">Browse My Recent</p>
-        <h1 class = "title">Projects</h1>
-        <div class = "experience-details-container">
-            <div class = "about-containers">
-            <div class = "details-container color-container">
-                <div class="article-container">
-                    <img src = "./assets/wwiscreenshot.png" alt = "Project 1"
-                     class = "project-img"/>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <h1 class="title">Experience</h1>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <span class="timeline-date">June 2025 – August 2025</span>
                 </div>
-                <h2 class = "experience-sub-title project-title">Work Wellness Initiative</h2>
-                <div class = "btn-container">
-                    <button class = "btn btn-color-2 project-btn" onclick = "location.href = 'https://github.com/KeerthiPeruka/Hackhers'">
-                        Github
-                    </button>
-                    <button class = "btn btn-color-2 project-btn" onclick = "location.href = 'https://devpost.com/software/work-wellness-initiative'">
-                        Live Demo
-                    </button>
-                </div>
-            </div>
-            <div class = "details-container color-container">
-                <div class="article-container">
-                    <img src = "./assets/researchthumbnail.png" alt = "Project 1"
-                     class = "project-img"/>
-                </div>
-                <h2 class = "experience-sub-title project-title">How Outside Noise Impacted Hydrothermal Plumes Experiment Results</h2>
-                <div class = "btn-container">
-                    <button class = "btn btn-color-2 project-btn" onclick = "location.href = 'https://github.com/prajnak1/HydrothermalPlumesResearchPythonCode/tree/main'">
-                        Github
-                    </button>
-                    <button class = "btn btn-color-2 project-btn" onclick = "location.href = 'https://www.linkedin.com/in/prajna-karmaker-0abc/overlay/experience/2330717139/multiple-media-viewer/?profileId=ACoAAEX62EMBdCtu6mcZFZX55MU0lgpbC8gPN-s&treasuryMediaId=1717718760337'">
-                        Live Demo
-                    </button>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <h2 class="timeline-role">Data Science &amp; Machine Learning Intern</h2>
+                        <span class="timeline-company">Capgemini</span>
+                    </div>
+                    <ul class="timeline-bullets">
+                        <li>Optimized the text-to-speech (TTS) pipeline for an avatar-based wealth management chatbot by benchmarking model latency with Python, utilizing HuggingFace documentation, and deploying improvements on an AWS EC2 instance with Linux; used Git for version control and Postman to test endpoints.</li>
+                        <li>Prompt engineered, structured, and cleaned mock datasets and schemas for testing in DBeaver using SQL, Excel, and Copilot, enabling smoother backend integration and query development.</li>
+                        <li>Created mockups in Figma to prototype a responsive, user-friendly web interface aligned with project goals.</li>
+                        <li>Experimented with Docker to deploy NVIDIA Magpie TTS containers.</li>
+                    </ul>
                 </div>
             </div>
-            <div class = "details-container color-container">
-                <div class="article-container">
-                    <img src = "./assets/cyberthumbnail.webp" alt = "Project 1"
-                     class = "project-img"/>
+
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <span class="timeline-date">June 2023 – May 2024</span>
                 </div>
-                <h2 class = "experience-sub-title project-title">Cyber Threat Management Course</h2>
-                <div class = "btn-container">
-                    <button class = "btn btn-color-2 project-btn" onclick = "location.href = 'https://docs.google.com/document/d/1ItzEdHQthoZGgt6_wbvc59mUJBGBodINHodWS3VglWM/edit?tab=t.0'">
-                        Document
-                    </button>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <h2 class="timeline-role">Undergraduate Research Assistant</h2>
+                        <span class="timeline-company">Analyzing Underwater Hydrothermal Plumes</span>
+                    </div>
+                    <ul class="timeline-bullets">
+                        <li>Engineered a Python-based algorithm to visualize underwater volcanic sonar sensor data, enabling accurate detection of hydrothermal plumes for ocean and pool data.</li>
+                        <li>Performed pattern analysis leveraging NumPy, matplotlib, and Pandas within Jupyter Notebook to determine noise pollution levels underwater and created succinct models to communicate research findings.</li>
+                    </ul>
                 </div>
             </div>
-            <div class = "details-container color-container">
-                <div class="article-container">
-                    <img src = "./assets/onmygrind.png" alt = "Project 1"
-                     class = "project-img"/>
+
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <span class="timeline-date">July 2023 – August 2023</span>
                 </div>
-                <h2 class = "experience-sub-title project-title">On My Grind</h2>
-                <div class = "btn-container">
-                    <button class = "btn btn-color-2 project-btn" onclick = "location.href = 'https://github.com/prajnak1/reactjs-proj3'">
-                        Github
-                    </button>
-                    <button class = "btn btn-color-2 project-btn" onclick = "location.href = 'https://github.com/prajnak1/reactjs-proj3/blob/master/onmygrind.gif'">
-                        Live Demo
-                    </button>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <h2 class="timeline-role">Volunteer AP CS Principles Instructor</h2>
+                        <span class="timeline-company">Schoolhouse</span>
+                    </div>
+                    <ul class="timeline-bullets">
+                        <li>Taught basics of programming, data science, JavaScript, SQL, networking protocols, and data security.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS (formerly Experience) -->
+    <section id="skills">
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article><div><h3>HTML</h3></div></article>
+                        <article><div><h3>CSS</h3></div></article>
+                        <article><div><h3>JavaScript</h3></div></article>
+                        <article><div><h3>React.js</h3></div></article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article><div><h3>PostgreSQL</h3></div></article>
+                        <article><div><h3>Node JS</h3></div></article>
+                        <article><div><h3>Express JS</h3></div></article>
+                        <article><div><h3>Git</h3></div></article>
+                    </div>
+                </div>
+            </div>
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Data Science</h2>
+                    <div class="article-container">
+                        <article><div><h3>SQL</h3></div></article>
+                        <article><div><h3>R</h3></div></article>
+                        <article><div><h3>Tableau</h3></div></article>
+                        <article><div><h3>Python</h3></div></article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Cybersecurity</h2>
+                    <div class="article-container">
+                        <article><div><h3>Compliance</h3></div></article>
+                        <article><div><h3>SIEM</h3></div></article>
+                        <article><div><h3>Malware Analysis</h3></div></article>
+                        <article><div><h3>Phishing Analysis</h3></div></article>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
-    <section id = "contact">
-        <p class = "section__text__p1">Get in Touch</p>
-        <h1 class = "title">Contact Me</h1>
-        <div class = "contact-info-upper-container">
-            <div class = "contact-info-container">
-                <img src = "./assets/email.png" alt = "Email icon" class = "icon contact-icon">
-                <p><a href = "mailto:p.kar.maker.231@gmail.com">p.kar.maker.231@gmail.com</a></p>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My </p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="wwiscreenshot.png" alt="Work Wellness Initiative" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Work Wellness Initiative</h2>
+                    <p class="project-description">A full-stack web application built with a team of four, featuring a JavaScript front-end, a Flask API, and a PostgreSQL database. Workers log daily commentary about their workday and receive personalized mental health feedback powered by the OpenAI API.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/KeerthiPeruka/Hackhers'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://devpost.com/software/work-wellness-initiative'">Live Demo</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="wealth_portfolio_screenshot.png" alt="Wealth Portfolio Assistant" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Wealth Portfolio Assistant</h2>
+                    <p class="project-description">An AI-powered wealth management application delivering personalized financial advice via the OpenAI API, enhanced with RAG functionality and FAISS vector search for context-aware responses. Portfolio data is visualized through Matplotlib and Pandas, backed by a JavaScript front-end, Flask API, and SQLite database.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/prajnak1'">Github</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="medical_chatbot_screenshot.png" alt="Medical Chatbot" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Medical Chatbot</h2>
+                    <p class="project-description">A retrieval-augmented generation (RAG) pipeline for answering medical condition queries, built with OpenAI models, LangChain orchestration, and Pinecone vector search. Fine-tuned on the Gale Encyclopedia of Medicine to deliver accurate, reliable, and contextually grounded responses.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/prajnak1/Medical_Chatbot'">Github</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="screenshot_customization_tool.png" alt="Screenshot Customization Tool" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Screenshot Customization Tool</h2>
+                    <p class="project-description">A React.js application that integrates with a screenshot API to let users capture and export screenshots with custom formatting, custom image type, and removing ads when necessary.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/prajnak1/reactjs-proj4'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/prajnak1/reactjs-proj4/blob/master/cap.gif'">Live Demo</button>
+
+                    </div>
+                </div>
 
             </div>
-            <div class = "contact-info-container">
-                <img src = "./assets/linkedin.png" alt = "LinkedIn icon" class = "icon contact-icon">
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./email.png" alt="Email icon" class="icon contact-icon">
+                <p><a href="mailto:p.kar.maker.231@gmail.com">p.kar.maker.231@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
                 <p><a href="https://www.linkedin.com/in/prajna-karmaker-0ab239289/">LinkedIn</a></p>
             </div>
         </div>
     </section>
+
     <footer>
         <nav>
-            <div class = "nav-links-container">
+            <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -293,6 +250,7 @@
         </nav>
         <p>Copyright &#169; 2025 Prajna Karmaker. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

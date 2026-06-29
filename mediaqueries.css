@@ -1,107 +1,77 @@
+/* ── RESPONSIVE / MEDIA QUERIES ── */
 
-@media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-    }
-    .about-containers {
-      flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-      height: fit-content;
-    }
+@media screen and (max-width: 1024px) {
+  section { margin: 0 2.5rem; }
+  #desktop-nav { padding: 0 2.5rem; }
+  footer { padding: 2rem 2.5rem; }
+
+  .section__text .title { font-size: 3.5rem; }
+
+  #profile { gap: 4rem; }
+  .section__pic-container { width: 280px; height: 340px; }
+}
+
+@media screen and (max-width: 768px) {
+  /* Switch nav */
+  #desktop-nav { display: none; }
+  #hamburger-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 0 1.5rem;
+    height: 60px;
+    background: var(--cream);
+    border-bottom: 1px solid var(--border);
   }
-@media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-    }
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
-    }
-    #profile,
-    .section-container {
-      display: block;
-    }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
-      height: fit-content;
-    }
-    section {
-      margin: 0 5%;
-    }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-    .about-containers {
-      margin-top: 0;
-    }
+  :root { --nav-h: 60px; }
+
+  /* Profile stacks vertically */
+  #profile {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding-top: calc(60px + 4vh);
+    min-height: unset;
+    padding-bottom: 5vh;
   }
-
-
-@media screen and (max-width: 600px) {
-    #contact,
-    footer {
-      height: 40vh;
-    }
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
-    }
-    article {
-      font-size: 1rem;
-    }
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-    .contact-info-container {
-      margin: 0;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
-    .section__text__p2 {
-      font-size: 1.25rem;
-    }
-    .title {
-      font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
-    }
+  .section__pic-container {
+    width: 220px;
+    height: 270px;
+    outline-offset: 6px;
   }
-  
+  .section__text { text-align: center; max-width: 100%; }
+  .section__text .title { font-size: 3rem; text-align: center; }
+  #socials-container { justify-content: center; }
 
+  /* Section margins */
+  section { margin: 0 1.5rem; }
+  footer { padding: 2rem 1.5rem; }
 
+  /* Timeline stacks on mobile */
+  .timeline { padding-left: 0.75rem; }
+  .timeline-item { grid-template-columns: 1fr; gap: 0.5rem; }
+  .timeline-meta { text-align: left; padding-left: 0.25rem; }
+
+  /* Experience */
+  .about-containers { flex-direction: column; }
+
+  /* Projects */
+  #projects .about-containers { flex-direction: column; }
+  .color-container { flex: 1 1 100%; }
+
+  /* Contact */
+  .contact-info-upper-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section__text .title { font-size: 2.4rem; }
+  .title { font-size: 2.2rem !important; }
+  .experience-sub-title { font-size: 1.2rem; }
+  article { width: 100%; }
+}
